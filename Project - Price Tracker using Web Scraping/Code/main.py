@@ -18,7 +18,6 @@ print("Product Name :",nameofProduct)
 print("Current Price :",true_price)
 response = input("Do you want to be notified when the price fells down (Specify Yes or No) :")
 if response == "yes" or response == "Yes" :
-    email_id = input("Enter your E-mail I'd : ")
     print("Thank You!! You'll be notified when the price drops.")
 else :
     exit()
@@ -29,10 +28,10 @@ while True :
     if curr_price <= true_price :
         server = smtplib.SMTP('smtp.gmail.com',587)
         server.starttls()
-        server.login("adi.kumar0602@gmail.com","atoqypuaecgxgzje")
+        server.login("email_id","password")
         msg = "Hey!!\n\nPrice of " + nameofProduct + ", has fell down by Rs " + str(true_price-curr_price) + ".\n" 
         link = "Click this link to Purchase it : " + url
-        server.sendmail("adi.kumar0602@gmail.com",email_id,(msg+link))
+        server.sendmail("sender_email","reciever_email",(msg+link))
         server.quit()
     sleep(60)  # 60 seconds sleep
     print("Current Price :",curr_price)
