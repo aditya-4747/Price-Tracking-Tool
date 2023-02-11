@@ -1,3 +1,5 @@
+
+# Function to return the price of the product.
 def price(url,main) :
     az = url.find('amazon')
     fk = url.find('flipkart')
@@ -17,7 +19,7 @@ def price(url,main) :
     num_price = int((repr(price.string)).replace("₹","").replace(",","").replace("'",""))
     return num_price
 
-
+# Function to return the name of the product.
 def name(url,main) :
     fk = url.find('flipkart')
     sd = url.find('snapdeal')
