@@ -39,6 +39,8 @@ while True :
         msg = "Hey!!\n\nPrice of " + nameofProduct + ", has fell down by Rs " + str(true_price-curr_price) + ".\n" 
         link = "Click this link to Purchase it : " + url
         server.sendmail("sender_email","reciever_email",(msg+link))
+        # sender_email and reciever_email should be provided either in form of string or variable.
+        
         server.quit()
     sleep(60)  # 60 seconds sleep
     print("Current Price :",curr_price)
