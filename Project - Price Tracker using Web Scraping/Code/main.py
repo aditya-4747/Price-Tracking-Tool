@@ -5,7 +5,7 @@ from time import sleep
 import product
 
 # My User Agent
-head = ({'User-Agent':'Your user agent should be pasted here. Search for "My user agent" on google to get it.','Accept-Language': 'en-US, en;q=0.5'})
+head = ({'User-Agent':'Your_user_agent_should_be_pasted_here._Search_for_"My user agent"_on_google_to_get_it.','Accept-Language': 'en-US, en;q=0.5'})
 
 # Taking the URL as input and requesting to the HTTP
 url = input("Enter the link of the Product :")
