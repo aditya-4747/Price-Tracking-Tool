@@ -1,5 +1,25 @@
 # Price Tracking Tool
 
-The Price Tracking Tool helps the user to get notified when price of a specific product drops.
-User has to provide the URL of the product and using that URL we would track the price and notify via E-mail.
-requests,bs4 and smtplib modules are used in the making of this project.
+## Overview
+Price Tracking Tool is a Python script for tracking product prices. Users input the product URL, set a price threshold, and receive email notifications when the price drops below the specified limit.
+
+## Dependencies
+- Python 3.x
+- BeautifulSoup (for web scraping)
+- Requests (for email notifications)
+
+## How to Use
+
+1. Install dependencies
+2. Run the tool
+3. Follow On-Screen Instructions:
+   Input the product URL.
+   Configure email settings.
+4. Receive Notifications:
+   The tool will monitor the product and notify you via email when the price drops.
+
+## Contributing
+Contributions are welcome! Fork the repository, make improvements, and submit pull requests.
+
+## Disclaimer
+This tool is intended for educational and personal use only. Use it responsibly and respect the terms of service of the websites you are scraping.
